@@ -15,11 +15,12 @@ devtools::install_github('unimi-dse/edf3d358')
 * [Tidyverse](https://www.tidyverse.org/)
 ### Example
 ```
-Tickr1 <- Get_Ticker("AAPL")
+library(TRY)
+Tickr1 <- Get_Ticker("AAPL") #Check ticker' symbol on Yahoo
 Tickr2 <- Get_Ticker("FB")
-ClosingPrices <- Resume(Tickr1, Tickr2)
-RM <- RollingMean(ClosingPrices)
-df <- Modeldf("ClosingPrices")
+ClosingPrices <- Resume(Tickr1, Tickr2) #Merge and clean data
+RM <- RollingMean(ClosingPrices) #Perform basic analysis
+df <- Modeldf("ClosingPrices") #
 Plottt <- Plot_Ticker(df, df$AAPL.Close, df$FB.Close)
 ```
 
