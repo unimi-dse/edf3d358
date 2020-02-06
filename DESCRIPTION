@@ -7,4 +7,5 @@ Description: Basic analysis of two tickers. Model the xts into a dataframe, save
 Depends: R (>= 3.1.0)
 License: All
 LazyData: true
-require: tidyverse tidyquant
+Imports: tidyverse,
+         tidyquant
