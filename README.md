@@ -1,4 +1,4 @@
-# TRY : Analysis of two stocks' closing prices on YahooFinance :camel:
+# TRY : Analysis of two stocks' closing prices on YahooFinance
 ## Get_Ticker, Model xts objects, Build dataframe, ggplot the annual trend.
 This Package takes two stocks from [YahooFinance](https://finance.yahoo.com) as xts objects
 with their respective *closing price*. It model them as a time series to find the Rollingmean.
@@ -20,7 +20,7 @@ Tickr1 <- Get_Ticker("AAPL") #Check ticker' symbol on Yahoo
 Tickr2 <- Get_Ticker("FB")
 ClosingPrices <- Resume(Tickr1, Tickr2) #Merge and clean data
 RM <- RollingMean(ClosingPrices) #Perform basic analysis
-df <- Modeldf("ClosingPrices") #
+df <- Modeldf(ClosingPrices) #transofrm data in a data frame to easily plot
 Plottt <- Plot_Ticker(df, df$AAPL.Close, df$FB.Close)
 ```
 
