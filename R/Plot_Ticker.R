@@ -2,7 +2,7 @@
 Plot_Ticker<- function(Dataset,Tckr1,Tckr2){
 
 
- p <- ggplot2::ggplot(Dataframe, aes(Date))
+ p <- ggplot2::ggplot(Dataset, aes(Date))
 
  x <-  p +
   geom_line(aes(y = Tckr1, colour = "Ticker1"),group =1) +
