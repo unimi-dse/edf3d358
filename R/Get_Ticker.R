@@ -1,3 +1,12 @@
+#' Get a Ticker: Save into Close Price of Stocks
+#'
+#' @param NameTckr A string containing Ticker Symbol
+#' @return The ClosePrice of the Ticker since the 1/1/2015
+#' @examples
+#' FTSE <- Get_Ticker("FTSEMIB.MI")
+#' BTC <- Get_Ticker("BTC-USD")
+
+
 Get_Ticker <- function(NameTckr){
   myEnv<- new.env()
   Data_acq <- quantmod::getSymbols(NameTckr,
