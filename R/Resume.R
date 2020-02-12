@@ -3,5 +3,6 @@ Resume<- function(x, y){
   Title2 <- Get_Ticker("y")
                                Stocks <- merge(x, y)
                                Clean <- na.omit(Stocks)
+  return(Clean)
 }
 
