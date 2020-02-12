@@ -9,3 +9,4 @@ License: All
 LazyData: true
 Imports: tidyverse,
          tidyquant
+RoxygenNote: 7.0.2
