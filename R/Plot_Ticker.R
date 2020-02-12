@@ -1,6 +1,7 @@
 #required library tidyverse e tydiquant
 Plot_Ticker<- function(Dataset,Tckr1,Tckr2){
-
+library(tidyverse)
+library(tidyquant)
 
  p <- ggplot2::ggplot(Dataset, aes(Date))
 
