@@ -1,14 +1,15 @@
 Package: Stk
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Analyze two Tickers
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Author:Lorenzo de Sario
+Maintainer: lorello97@gmail.com
+Description: Download the closing prices of two tickers from Yahoo Finance, get summary statistics from the rolling mean, plot the annaul trends
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.0.2
-
+Imports: quantmod, 
+         zoo,
+         ggplot2
 
